@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comer con calma | Tu relación con la comida puede cambiar</title>
-<meta name="description" content="Comer con calma: una app de acompañamiento diario para entender los antojos y relacionarte con la comida con más calma, sin dietas ni culpa.">
+<title>Comer con calma | Elegí cómo querés usarla</title>
+<meta name="description" content="Comer con calma: una app de acompañamiento para entender los antojos y relacionarte con la comida con más calma. Disponible en versión gratuita y versión paga.">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -318,6 +318,19 @@ details p { margin-top: 12px; font-size: 16px; }
 }
 .float-bar a { flex: 1; text-align: center; padding: 14px; font-size: 15px; }
 
+.fomo-pulse { animation: fomoPulse 2.2s ease-in-out infinite; }
+@keyframes fomoPulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.02); } }
+
+@media (max-width: 600px) {
+  .hero { padding-bottom: 55px; }
+  .hero-copy > p { font-size: 18px; }
+  .price-val { font-size: 48px; }
+  .btn { width: 100%; }
+  .cta-row { flex-direction: column; }
+  .float-bar { left:10px; right:10px; bottom:10px; }
+  .float-bar a { padding:12px 8px; font-size:13px; }
+}
+
 @media (max-width: 900px) {
   .hero-grid, .pain-grid, .app-grid, .compare-grid { grid-template-columns: 1fr; gap: 40px; }
   .price-features { grid-template-columns: 1fr; }
@@ -336,9 +349,9 @@ details p { margin-top: 12px; font-size: 16px; }
     </nav>
     <div class="hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Acompañamiento diario · En tu celular</span>
+        <span class="eyebrow">Disponible en versión gratuita y versión paga · En tu celular</span>
         <h1>¿Comés sin hambre cuando estás <span class="font-serif">cansada, estresada o triste?</span></h1>
-        <p>Y después llega la culpa. <strong>Comer con calma</strong> te ayuda a entender el origen de tus antojos para responder con tranquilidad, sin dietas estrictas ni contar calorías.</p>
+        <p>Y después llega la culpa. <strong>Comer con calma</strong> te ayuda a entender el origen de tus antojos para responder con tranquilidad, sin dietas estrictas ni contar calorías. <strong>Podés empezar con la versión gratuita o elegir la experiencia paga cuando quieras.</strong></p>
 
         <div class="cta-group">
           <div class="cta-row">
@@ -348,10 +361,10 @@ details p { margin-top: 12px; font-size: 16px; }
           <div class="trust-badges">
             <span>✓ Sin dietas</span>
             <span>✓ Sin contar calorías</span>
-            <span>✓ Cancelás cuando quieras</span>
+            <span>✓ Versión gratuita disponible</span>
           </div>
           <div class="price-tag">
-            <span>🌎 <strong>USD 5,99/mes*</strong> (Precio adaptado automáticamente a tu moneda local en Hotmart)</span>
+            <span>🌎 <strong>Elegí cómo querés usarla</strong> · Versión gratuita o versión paga. Si comprás mediante Hotmart, el importe se adapta automáticamente a la moneda de tu país.</span>
           </div>
         </div>
       </div>
@@ -370,6 +383,14 @@ details p { margin-top: 12px; font-size: 16px; }
     </div>
   </div>
 </header>
+
+<!-- FOMO -->
+<section style="background:var(--terracotta); color:#fff; padding:16px 0; text-align:center;">
+  <div class="container">
+    <strong style="font-size:15px;">⏳ NO LO DEJES PARA DESPUÉS:</strong>
+    <span style="font-size:15px; margin-left:8px;">empezá gratis hoy y decidí más adelante si querés pasar al acceso completo.</span>
+  </div>
+</section>
 
 <!-- Sección Diagnóstico / Dolor -->
 <section class="section pain">
@@ -410,7 +431,8 @@ details p { margin-top: 12px; font-size: 16px; }
     <span class="eyebrow" style="background:rgba(255,255,255,0.15); color:#fff; border:none;">Un cambio de perspectiva</span>
     <h2>No necesitás otra dieta restrictiva. Necesitás comprender qué sentís.</h2>
     <p>Comer con calma te acompaña en el momento exacto en que aparece el antojo para ayudarte a hacer una pausa, procesar la emoción y decidir con libertad.</p>
-    <a class="btn btn-primary" href="https://pay.hotmart.com/G107905272O" target="_blank">Probar la App ahora</a>
+    <p style="color:rgba(255,255,255,.95); font-weight:800; margin-top:-18px; margin-bottom:28px;">Empezá con la versión gratuita o aprovechá ahora el acceso pago completo.</p>
+    <a class="btn btn-primary" href="https://pay.hotmart.com/G107905272O" target="_blank">Quiero elegir mi versión →</a>
   </div>
 </section>
 
@@ -482,14 +504,43 @@ details p { margin-top: 12px; font-size: 16px; }
   </div>
 </section>
 
+<!-- Elegí tu modalidad -->
+<section class="section" style="padding-bottom:20px;">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:32px;">
+      <span class="eyebrow">Sin presión · Vos elegís</span>
+      <h2>Podés empezar gratis. Podés elegir el acceso completo.</h2>
+      <p>No tenés que decidir todo ahora. Probá la versión gratuita y elegí la modalidad que mejor se adapte a vos.</p>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card good">
+        <h3>✓ Versión gratuita</h3>
+        <ul>
+          <li>✓ Empezá sin pagar</li>
+          <li>✓ Conocé la experiencia</li>
+          <li>✓ Elegí después si querés más</li>
+        </ul>
+      </div>
+      <div class="compare-card" style="background:var(--terracotta-light); border-color:rgba(200,109,81,.35);">
+        <h3 style="color:var(--terracotta-dark);">★ Versión paga</h3>
+        <ul>
+          <li>✓ Acceso completo</li>
+          <li>✓ Todas las herramientas incluidas</li>
+          <li>✓ Acceso desde tus dispositivos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Oferta / Precio -->
 <section class="section" id="precio">
   <div class="container">
     <div class="price-card">
-      <div class="price-badge">OFERTA DE LANZAMIENTO</div>
-      <p style="text-transform: uppercase; letter-spacing:0.05em; font-weight:700; font-size:13px; color:var(--muted);">Acceso Completo Ilimitado</p>
+      <div class="price-badge">OFERTA DE LANZAMIENTO · ACCESO PAGO</div>
+      <p style="text-transform: uppercase; letter-spacing:0.05em; font-weight:700; font-size:13px; color:var(--muted);">VERSIÓN PAGA · ACCESO COMPLETO</p>
       <div class="price-val">USD 5,99 <span>/ mes</span></div>
-      <p>Menos de lo que cuesta un café por semana. Podés cancelar en cualquier momento con un solo clic.</p>
+      <p><strong>La versión gratuita te permite empezar sin pagar.</strong> Si querés la experiencia paga completa, podés acceder por USD 5,99/mes. Elegís cómo querés usarla.</p>
       
       <div class="price-features">
         <div>✓ Botón SOS Antojo 24/7</div>
@@ -497,10 +548,12 @@ details p { margin-top: 12px; font-size: 16px; }
         <div>✓ Registro de Patrones</div>
         <div>✓ Módulos Mensuales Nuevos</div>
         <div>✓ Acceso multi-dispositivo</div>
-        <div>✓ Garantía de 7 días</div>
+        <div>✓ Versión gratuita disponible</div>
       </div>
 
-      <a class="btn btn-primary" href="https://pay.hotmart.com/G107905272O" target="_blank" style="width:100%;">Comenzar mi Suscripción →</a>
+      <div style="background:var(--terracotta-light); border-radius:14px; padding:14px 18px; margin-bottom:22px; font-size:14px; font-weight:700; color:var(--terracotta-dark);">⏳ Si estabas esperando para empezar, este es el momento. La oferta de acceso pago puede cambiar.</div>
+      <a class="btn btn-primary" href="https://pay.hotmart.com/G107905272O" target="_blank" style="width:100%;">Quiero el acceso completo →</a>
+      <p style="font-size:13px; margin-top:14px;">Compra mediante Hotmart: el precio se adapta automáticamente a la moneda de tu país.</p>
     </div>
   </div>
 </section>
@@ -518,8 +571,12 @@ details p { margin-top: 12px; font-size: 16px; }
         <p>No. No te diremos qué comer ni contaremos calorías. Te enseñamos a gestionar la ansiedad y las emociones asociadas a la comida.</p>
       </details>
       <details>
-        <summary>¿Cómo cancelo la suscripción?</summary>
-        <p>Podés cancelar en cualquier momento desde el panel de Hotmart sin ataduras ni contratos de permanencia.</p>
+        <summary>¿Tengo que pagar para usar Comer con calma?</summary>
+        <p>No. Hay una versión gratuita y una versión paga. Podés elegir cómo querés usarla y pasar a la versión paga si querés acceder a la experiencia completa.</p>
+      </details>
+      <details>
+        <summary>¿Cómo funciona la compra por Hotmart?</summary>
+        <p>Si elegís la versión paga y realizás la compra mediante Hotmart, el importe se adapta automáticamente a la moneda de tu país. No necesitás hacer la conversión manualmente.</p>
       </details>
       <details>
         <summary>¿Funciona en mi modelo de celular?</summary>
@@ -531,7 +588,7 @@ details p { margin-top: 12px; font-size: 16px; }
 
 <!-- Barra Flotante Móvil / CTA Sticky -->
 <div class="float-bar">
-  <a class="btn btn-primary" href="https://pay.hotmart.com/G107905272O" target="_blank">Empezar Ahora</a>
+  <a class="btn btn-primary" href="https://pay.hotmart.com/G107905272O" target="_blank">Elegir mi versión</a>
   <a class="btn btn-secondary" href="https://wa.me/5493492418616?text=Hola%2C%20quiero%20info%20de%20Comer%20con%20calma" target="_blank">WhatsApp</a>
 </div>
 
